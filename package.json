@@ -1,0 +1,36 @@
+{
+  "name": "sitefinity-rest-sdk-portable",
+  "version": "0.1.0",
+  "private": true,
+  "license": "SEE LICENSE IN EULA.md",
+  "description": "Framework-neutral Sitefinity content and page layout REST client",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/cjs/index.d.ts",
+  "react-native": "./dist/esm/index.js",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
+    }
+  },
+  "sideEffects": false,
+  "files": ["dist", "README.md", "EULA.md", "examples/node/index.mjs", "examples/node/.env.example", "scripts/smoke-live.mjs"],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "node scripts/build.cjs",
+    "example": "node examples/node/index.mjs",
+    "test:live": "node scripts/smoke-live.mjs",
+    "test:package": "node scripts/check-package.cjs",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "~5.8.3"
+  }
+}

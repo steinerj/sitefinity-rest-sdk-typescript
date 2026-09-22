@@ -4,8 +4,6 @@ A TypeScript/JavaScript client for Sitefinity content, search, media, and page-l
 
 Use it from Node, a browser application, or a runtime with a compatible HTTP transport. No React or Next.js installation required. Plain JavaScript is fine; TypeScript declarations come with the build.
 
-This is a pre-release SDK, not a wrapper for every Sitefinity API. License terms are in [EULA.md](EULA.md).
-
 ## Contents
 
 - [Setup and first run](#setup-and-first-run)
